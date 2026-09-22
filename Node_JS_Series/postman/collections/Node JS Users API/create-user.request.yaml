@@ -1,0 +1,17 @@
+$kind: http-request
+name: Create User
+method: POST
+url: '{{baseUrl}}/api/users'
+order: 4000
+description: 'Create a new user. Requires name (string), email (string), and age (non-negative integer).'
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "name": "John Doe",
+      "email": "john@example.com",
+      "age": 25
+    }

@@ -16,6 +16,19 @@ flutter run --dart-define=API_BASE_URL=http://10.0.2.2:3000
 The API response should be a JSON array containing `id`, `name`, `email`, and
 `age` fields.
 
+## Run the API
+
+Start the included Node.js API from the project root:
+
+```shell
+cd Node_JS_Series
+npm install
+node server.js
+```
+
+The API listens on `http://localhost:3000` and enables CORS for the Flutter web
+client.
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.

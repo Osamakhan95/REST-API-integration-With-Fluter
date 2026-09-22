@@ -1,0 +1,17 @@
+$kind: http-request
+name: Update User
+method: PUT
+url: '{{baseUrl}}/api/users/{{userId}}'
+order: 5000
+description: Update an existing user by ID. Requires name, email, and age.
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "name": "John Updated",
+      "email": "john.updated@example.com",
+      "age": 26
+    }
